@@ -35,6 +35,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.ButtonStream = new System.Windows.Forms.Button();
             this.ButtonSets = new System.Windows.Forms.Button();
+            this.ButtonPhoto = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 234);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 279);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(392, 22);
             this.statusStrip1.TabIndex = 2;
@@ -75,7 +76,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 206);
+            this.progressBar1.Location = new System.Drawing.Point(12, 253);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(368, 23);
             this.progressBar1.TabIndex = 3;
@@ -86,7 +87,7 @@
             this.ButtonStream.Name = "ButtonStream";
             this.ButtonStream.Size = new System.Drawing.Size(111, 25);
             this.ButtonStream.TabIndex = 4;
-            this.ButtonStream.Text = "Stats flux";
+            this.ButtonStream.Text = "Stats galerie";
             this.ButtonStream.UseVisualStyleBackColor = true;
             this.ButtonStream.Click += new System.EventHandler(this.ButtonStream_Click);
             // 
@@ -98,12 +99,24 @@
             this.ButtonSets.TabIndex = 5;
             this.ButtonSets.Text = "Stats albums";
             this.ButtonSets.UseVisualStyleBackColor = true;
+            this.ButtonSets.Click += new System.EventHandler(this.ButtonSets_Click);
+            // 
+            // ButtonPhoto
+            // 
+            this.ButtonPhoto.Location = new System.Drawing.Point(22, 212);
+            this.ButtonPhoto.Name = "ButtonPhoto";
+            this.ButtonPhoto.Size = new System.Drawing.Size(110, 25);
+            this.ButtonPhoto.TabIndex = 6;
+            this.ButtonPhoto.Text = "Stats photos";
+            this.ButtonPhoto.UseVisualStyleBackColor = true;
+            this.ButtonPhoto.Click += new System.EventHandler(this.ButtonPhoto_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 256);
+            this.ClientSize = new System.Drawing.Size(392, 301);
+            this.Controls.Add(this.ButtonPhoto);
             this.Controls.Add(this.ButtonSets);
             this.Controls.Add(this.ButtonStream);
             this.Controls.Add(this.progressBar1);
@@ -130,6 +143,7 @@
         private System.Windows.Forms.ToolStripStatusLabel StatusLabel;
         private System.Windows.Forms.Button ButtonStream;
         private System.Windows.Forms.Button ButtonSets;
+        private System.Windows.Forms.Button ButtonPhoto;
     }
 }
 
